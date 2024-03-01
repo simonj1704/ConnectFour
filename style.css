@@ -1,0 +1,50 @@
+body{
+    background-color: #666;
+    color: #8b8;
+    font-family: Arial, sans-serif;
+    
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    gap: 0.5em 1.5em;
+}
+
+.cell{
+    width: 64px;
+    aspect-ratio: 1/1;
+    font-size: 300%;
+
+    background-color: #888;
+    border: 4px outset darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.player1{
+    background-color: red;
+}
+
+.player2{
+    background-color: yellow;
+}
+
+button{
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+#main{
+    /* display the div in the center of */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
